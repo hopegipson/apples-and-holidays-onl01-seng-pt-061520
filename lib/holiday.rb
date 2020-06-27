@@ -63,7 +63,7 @@ stringseason = season.to_s
       puts "#{stringseason.capitalize}:"
       holiday.each do |holiday, supply|
        stringholiday = holiday.to_s.split("_").collect {|holly| holly.capitalize!}.join(" ")
-        puts "#{stringholiday}: #{supply.join(" ")}"
+        puts "#{stringholiday}: #{supply.join(", ")}"
       end
       end
     
